@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚡ My Daily Mission</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div>
+    <div class="badge">PERSONAL GROWTH SYSTEM</div>
+    <h1>⚡ MY DAILY MISSION</h1>
+    <p>Work for yourself • Improve yourself • Build your future</p>
+  </div>
+  <div class="clock-box">
+    <div id="liveDate">Loading...</div>
+    <div id="liveTime">00:00:00</div>
+    <div class="day-window">DAY ENDS AT <b>3:00 AM</b></div>
+  </div>
+</header>
+
+<section class="dashboard">
+  <div class="stat blue"><span>📅 MISSION DATE</span><strong id="todayText">--</strong></div>
+  <div class="stat purple"><span>🎯 TODAY'S PROGRESS</span><strong id="progressText">0%</strong></div>
+  <div class="stat orange"><span>🔥 CURRENT STREAK</span><strong id="streakText">0 Days</strong></div>
+  <div class="stat green"><span>☑️ COMPLETED</span><strong id="completedText">0 / 8</strong></div>
+</section>
+
+<div class="progress-container">
+  <div class="progress-label"><span>Daily Mission Progress</span><b id="progressLabel">0%</b></div>
+  <div class="progress-bar"><div id="progressFill"></div></div>
+</div>
+
+<main class="table-wrapper">
+<table id="checklistTable">
+<thead><tr><th class="task-column">DAILY TASK</th></tr></thead>
+<tbody id="taskBody"></tbody>
+</table>
+</main>
+
+<footer>
+  <p>🌙 Late-night mode enabled — your day runs until <b>3:00 AM</b>.</p>
+  <button onclick="goToToday()">📍 GO TO TODAY</button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
